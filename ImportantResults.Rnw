@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\begin{document}
+\section{Important Results}
+\noindent \textbf{Sequence Convergence}: If $a_1...a_n$ converge to a as n $\rightarrow \infty$ then:
+$$\lim_{n \to \infty} \left( 1+ \frac{a_n}{n}\right)^n= e^a \text{, }\lim_{n \to \infty} \left( 1- \frac{a_n}{n}\right)^n= e^{-a} \text{, } \sum \frac{a^x}{x!}=e^a \text{, } \sum \frac{xa^x}{x!}=ae^a \text{ and, } \sum \frac{x^2a^x}{x!}=ae^a$$
+$$ \sum \frac{(1-a)^x}{x!}=e^{1-a}-1\text{, } \int_{-\infty}^{\infty}e^{\frac{x^2}{2}}=\sqrt{2\pi}??$$
+Stirling's Formula:\\
+$$n! \approx \sqrt{2\pi}n^{n+(1/2)}e^{-n}$$
+Binomial Results
+$$\sum_{k=0}^{\alpha} {\alpha \choose k} z^k=(1+z)^{\alpha},(|z|<1) \text{, } \sum_{k=0}^n {n \choose k} = 2^n \text{, } \sum_{k=0}^n {k \choose m} = {n+1 \choose m+1}$$
+Geometric Series
+$$\sum_{k=0}^{n-1}ar^k=a \frac{1-r^n}{1-r} \text{, }\sum_{k=0}^{\infty}ar^k=\frac{a}{1-r}, \text{ for }|r|<1\text{, } \sum_{k=0}^{\infty}kr^k= \frac{1}{(1-r)^2} \text{, }\sum_{k=a}^b r^k=\frac{r^a-r^{b+1}}{1-r}$$ 
+
+\noindent \textbf{Differentiating Under the Integral:}\\
+if f(x,$\theta$), a($\theta$), and b($\theta$) are diferentiable with respect to $\theta$, then
+$$\frac{d}{d\theta}\int_{a(\theta)}^{b(\theta)}f(x,\theta)dx=f(b(\theta),\theta)\frac{d}{d\theta}b(\theta)-f(a(\theta),\theta)\frac{d}{d\theta}a(\theta)+\int_{a(\theta)}^{b(\theta)}\frac{\delta}{\delta \theta}f(x,\theta)dx$$
+If a($\theta$) and b($\theta$) are constant the first two terms are 0 and only the final term is needed.  This result can be applied if $f(x,\theta)
+$ is differentiable for all values of $\theta$.  \\
+
+\noindent \textbf{Gamma Results}:
+$$\Gamma(\alpha)=\int_0^{\infty} t^{\alpha-1}e^{-t}dt$$
+$$B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt=\frac{(x-1)!(y-1)!}{(x+y-1)!}=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}$$
+$\Gamma(\alpha+1)=\alpha\Gamma(\alpha)$, $\alpha>0$\\
+$\Gamma(n)=(n-1)!$\\
+$\Gamma(1/2)=\sqrt{\pi}$\\
+$f(t)=\frac{t^{\alpha-1}e^{-t}}{\Gamma(\alpha)}$, $0<t<\infty$, is a PDF.\\
+$\int_0^{\infty} x^{\alpha-1}e^{-x/\beta}dx = \Gamma(\alpha)\beta^\alpha$.\\
+For any constants a and b: $P(a< X_{\alpha,\beta}< b)= \beta(f(a|\alpha,\beta)-f(b|\alpha,\beta))+P(a<X_{\alpha-1,\beta}<b)$,(Can use this repeatedly to get to an integral that can be evaluated analytically if $\alpha$ is an integer)\\
+For $X\sim$gamma($\alpha,\beta$), $\bar{X}\sim$gamma($n\alpha,\beta/n$)\\
+$(n-1)S^2\sim$Gamma($\frac{n-1}{2},2$) and $S^2\sim$Gamma($\frac{n-1}{2},\frac{2}{n-1}$)\\
+
+\noindent \textbf{Normal Results}:\\
+$\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} e^{-z^2/2}dz = 1$\\
+$\int_0^{\infty} e^{-z^2/2}dz = \sqrt{\frac{\pi}{2}}$\\
+Stein's Lemma: If $X\sim n(\theta,\sigma^2)$, $E\left[g(x)(X-\theta)\right]= \sigma^2E(g^{\prime}(X))$\\
+The sum of normal random variables is distributed N($\sum \mu_i$, $\sum \sigma^2_i$)\\
+Sums abd differences of independent normal r.v.'s are independent normal r.v's if the vars are equal.\\
+$\bar{X}\sim$n($\mu,\sigma^2/n$) and $S^2\sim \chi^2_{n-1}$ are independent random variables.\\
+For $X_j\sim n(\mu_j,\sigma^2_j)$ indep. and constants $a_{ij}$ and $b_{rj}$ with j=1...m, i=1...k, and r=1...m where $k+m \leq n$, define:\\
+\indent $U_i=\sum_{j=1}^n a_{ij}X_j$, i=1...k\\
+\indent $V_r=\sum_{j=1}^n b_{rj}X_j$, r=1...m\\
+\begin{itemize}
+\item[a.] $U_i$ and $V_r$ are indep. iff $Cov(U_i,V_r)=0$ where $Cov(U_i,V_r)=a_{ij}b_{rj}\sigma^2_j$
+\item[b.] The random vectors U and V are indep. iff $U_i$ is indep. of $V_r$ for all pairs i,r
+\end{itemize}
+For $X_i\sim$n($\mu_i,\sigma^2_i$), $Z=\sum (ax_i+b_i) \sim n\left(\sum(a_i\mu_i + b_i), \sum a^2_i\sigma^2_i$)\\
+For $Y_i=\beta x_i +\epsilon$ where $\epsilon\sim$ n(0,$\sigma^2$), $Y\sim$n($\beta x, \sigma^2$)\\
+
+\noindent \textbf{Poisson Results}:\\
+Recursive Poisson formula: $P(X=x+1|\lambda)=\frac{\lambda}{x+1}P(X=x)$\\
+If $X\sim$Poisson($\theta$) and $Y\sim$Poisson($\lambda$) are independent then, $X+Y=Z\sim$Poisson($\theta+\lambda$).\\
+
+\noindent \textbf{$\chi^2$ Results}:\\
+For any function $h(x)$, $E\left[h(\chi^2_p)\right]= pE\left(\frac{h(\chi^2_{p+2})}{\chi^2_{p+2}}\right)$\\
+The sum of $\chi^2_{p_i}$ random variables is distributed $\chi^2_{\sum p_i}$\\
+
+\noindent \textbf{F Results}:\\
+If $X\sim F_{p,q}$ then $1/X\sim F_{q,p}$\\
+If $X\sim t_q$ then $X^2\sim F_{1,q}$\\
+IF $X\sim F_{p,q}$ then $\frac{(p/q)X}{1+(p/q)X}\sim \beta(p/2,q/2)$\\
+
+\noindent \textbf{Beta Results}:\\
+$$B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt=\frac{(x-1)!(y-1)!}{(x+y-1)!}=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}$$
+
+\noindent \textbf{t Results:}\\
+$t\sim \frac{X}{\sqrt{V/p}}$, where $X\sim$n(0,1) and $V\sim \chi^2_p$\\
+$t^2_p=\frac{X^2/1}{\chi^2_p/p}=\frac{\chi^2/1}{\chi^2_p/p}\sim F_{1,p}$\\
+
+\end{document}
