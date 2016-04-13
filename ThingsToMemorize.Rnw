@@ -1,0 +1,206 @@
+\documentclass{article}
+\usepackage{fullpage}
+\begin{document}
+Conditional Probability:\\
+
+Bayes rule:\\
+
+Steps for transforming CDF:\\
+\vspace{.5cm}
+
+Transforming PDF:\\
+\vspace{.5cm}
+
+Bivariate transformation:\\
+\vspace{1cm}
+
+What does $E(X - b)^2$ reduce to?  How?\\
+\vspace{.5cm}
+
+What is the MGF of $X$?\\
+\vspace{.5cm}
+
+What is the MGF of $aX+B$?\\
+\vspace{.5cm}
+
+How do you use the MGF to calculate higher order moments?\\
+\vspace{.5cm}
+
+What is the form of an exponential family?\\
+\vspace{.5cm}
+
+What are the exponential family shortcuts for:\\
+\begin{itemize}
+  \item[1] The expectation?
+\vspace{.5cm}
+  \item[2] The variance?
+\vspace{.5cm}
+  \item[3] A minimal sufficient statistic?
+\vspace{.5cm}
+  \item[4] A complete statistic?
+\vspace{.5cm}
+  \item[5] A best unbiased estimator BUE?
+\end{itemize}
+\vspace{.5cm}
+
+What are the properties of a location scale family?\\
+\vspace{1.5cm}
+
+What is Chebychev's inequality?\\
+\vspace{.5cm}
+
+How do you find a marginal distribution?\\
+\vspace{.5cm}
+
+How do you find a joint expectation?\\
+\vspace{.5cm}
+
+How do you find a joint probability?\\
+\vspace{.5cm}
+
+What is the expectation of a conditional distribution?\\
+\vspace{.5cm}
+
+What is the variance of a conditional distribution?\\
+\vspace{.5cm}
+
+What is the MGF of Z=X+Y?\\
+\vspace{.5cm}
+
+What is the $Var(X)$ in conditional terms?\\
+\vspace{.5cm}
+
+Given a conditional and marginal distribution whats the join?\\
+\vspace{.5cm}
+
+What is $Var(aX +bY)$?\\
+\vspace{.5cm}
+
+What is the formula for the covariance? How do you calculate the terms?\\
+\vspace{1.5cm}
+
+What is the formula for the correlation of X and Y?\\
+\vspace{.5cm}
+
+Write down the bivariate Normal.\\
+\vspace{1.5cm}
+
+What are the marginal distributions from a bivariate normal?\\
+\vspace{.5cm}
+
+If X, Y are bivariate normal what is the distribution of X+Y?\\
+\vspace{.5cm}
+
+What is an unbiased estimate of the variance?\\
+\vspace{.5cm}
+
+What is a trick for the distribution of the variance estimator?\\
+\vspace{.5cm}
+
+What is the distribution of the first and last order statistics?\\
+\vspace{.5cm}
+
+How do you approximate the expectation of a function of X (with mean $\theta$), $E(g(X))$?\\
+\vspace{.5cm}
+
+How do you approximate the variance of a function of X (with mean $\theta$), $Var(g(X))$?\\
+\vspace{.5cm}
+
+How can you combine the previous two methods with the CLT?\\
+\vspace{.5cm}
+
+List 2 ways to find sufficiency.\\
+\vspace{.5cm}
+
+List 2 ways to find minimal sufficiency.\\
+\vspace{.5cm}
+
+What is an ancillary statistic?\\
+\vspace{.5cm}
+
+How do you find a complete statistic?\\
+\vspace{1cm}
+
+How do you show a statistic is not complete, list 3 ways?\\
+\vspace{1cm}
+
+What is Basu's theorem?\\
+\vspace{.5cm}
+
+How do you find the MME for the first two moments?\\
+\vspace{.5cm}
+
+List the steps to finding the MLE.\\
+\vspace{1.5cm}
+
+How do you find the MLE when the parameter space is restricted?\\
+\vspace{.5cm}
+
+What is an alternate strategy for finding the MLE?\\
+\vspace{.5cm}
+
+What are the properties of the MLE?\\
+\vspace{.5cm}
+
+What is the posterior distribution given a prior?\\
+\vspace{.5cm}
+
+What is the bayes estimator?\\
+\vspace{.5cm}
+
+Write down the score function.\\
+\vspace{.5cm}
+
+Write down the two ways to find the Fisher information number. When can you use either method?\\
+\vspace{.5cm}
+
+What is the information of two independent RVs?.\\
+\vspace{.5cm}
+
+List three methods for finding the BUE using the CR bound.\\
+\vspace{.5cm}
+
+Describe two other methods for determining the UMVUE.\\
+\vspace{1cm}
+
+Give the information numbers for the following:\\
+\begin{itemize}
+  \item N($\mu$, $\sigma^2$)
+  \item Bin($k$, $p$)
+  \item Pois($\lambda$)
+  \item Gamma($\alpha$, $\beta$)
+\end{itemize}
+
+What is the power function?\\
+\vspace{.5cm}
+
+In words, what is the power of a test? How would you compute it?\\
+\vspace{.5cm}
+
+In words, what is the probability of making a type I error? How would you compute it?\\
+\vspace{.5cm}
+
+How would you construct a LRT (give two ways)?\\
+\vspace{1cm}
+
+What is the Neyman-Pearson theorem?\\
+\vspace{.5cm}
+
+List two ways to find the UMP?\\
+\vspace{.5cm}
+
+What is a pivotal quantity?\\
+\vspace{.5cm}
+
+How do you check for MLR?\\
+\vspace{.5cm}
+
+
+
+
+
+
+
+
+
+\end{document}
